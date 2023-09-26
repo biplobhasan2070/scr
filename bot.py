@@ -32,17 +32,15 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-client = pymongo.MongoClient(
-	
-	)# MONGO DB LINK 
+client = pymongo.MongoClient("")# MONGO DB LINK 
 db = client.credit_cards
 
 developers = ['878216403']
 
 
 addusr = ""
-tk = os.getenv("TOKEN")
-mode = os.getenv("MODE")
+tk = "2044683371:AAFU7tqk-SzEAM6xmfr4TNCiV9TxtZ6qgXQ"
+mode = "prod"
 
 posting_channel = os.getenv("CHAT_ID_FORWARD")
 
